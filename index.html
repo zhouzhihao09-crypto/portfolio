@@ -3,15 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio — Practical software systems</title>
+  <title>Zhou Zhihao — Software / AI Engineering</title>
+  <meta name="description" content="Portfolio of Zhou Zhihao, a software and AI engineer building practical systems: AI-powered document analysis, local RAG, telecom event ingestion, and a security-focused HTML sanitizer." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
+  <meta property="og:title" content="Zhou Zhihao — Software / AI Engineering" />
+  <meta property="og:description" content="Practical software systems: AI-powered document analysis, local RAG, telecom event ingestion, and a security-focused HTML sanitizer." />
+  <meta property="og:image" content="https://zhouzhihao09-crypto.github.io/portfolio/assets/tender-ai-dashboard.png" />
+  <meta property="og:type" content="website" />
 </head>
 <body>
+  <a class="skip-link" href="#projects">Skip to projects</a>
   <header class="hero">
     <div class="container hero-inner">
-      <h1 class="hero-title">Building practical software systems with AI, backend engineering, and automation.</h1>
-      <p class="hero-subtitle">A collection of projects exploring AI-powered applications, local RAG systems, and high-throughput backend services.</p>
-      <a class="btn" href="https://github.com/zhouzhihao09-crypto" target="_blank" rel="noopener">GitHub</a>
+      <p class="hero-eyebrow">Zhou Zhihao</p>
+      <h1 class="hero-title">Software / AI Engineering</h1>
+      <p class="hero-subtitle">Practical systems for AI-powered document analysis, local RAG, telecom event ingestion, and security-focused sanitization.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">View Projects</a>
+        <a class="btn" href="https://github.com/zhouzhihao09-crypto" target="_blank" rel="noopener">GitHub</a>
+      </div>
     </div>
   </header>
 
@@ -87,6 +98,27 @@
             <li>Vitest</li>
           </ul>
           <a class="btn btn-primary" href="https://github.com/zhouzhihao09-crypto/telecom-log-ingestion-service" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-media">
+          <img src="assets/safe-html-sanitizer-demo.png" alt="SafeHTML sanitizer demo screenshot" />
+          <div class="project-gif">
+            <img src="assets/safe-html-sanitizer-demo.gif" alt="SafeHTML sanitizer demo walkthrough" />
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">SafeHTML</h3>
+          <p class="project-desc">A small, security-focused HTML sanitization library for Java 21. It parses untrusted HTML into a DOM with jsoup, applies an allowlist policy, strips event-handler attributes, validates URLs, and returns sanitized HTML plus a security report.</p>
+          <p class="project-metric">363 tests · 0 failures · 0 errors · BUILD SUCCESS</p>
+          <ul class="tech">
+            <li>Java 21</li>
+            <li>jsoup</li>
+            <li>JUnit 5</li>
+            <li>Maven</li>
+          </ul>
+          <a class="btn btn-primary" href="https://github.com/zhouzhihao09-crypto/safe-html-sanitizer" target="_blank" rel="noopener">GitHub</a>
         </div>
       </article>
     </section>
