@@ -1,7 +1,8 @@
 # Portfolio
 
-A static developer portfolio showcasing four software projects:
+A static developer portfolio showcasing five software projects:
 
+- **ProofPilot** — Evidence-grounded verification with deterministic guardrails, optional semantic verification, provenance tracking, evidence graphs, and audit reports
 - **Tender AI** — AI-powered tender analysis and evidence organization
 - **Doc AI Assistant** — Local PDF question answering with semantic search
 - **Telecom Log Ingestion Service** — High-throughput telecom event ingestion
@@ -30,6 +31,8 @@ portfolio/
 ├── .nojekyll
 ├── .gitignore
 ├── assets/
+│   ├── proofpilot-architecture.svg
+│   ├── proofpilot-demo.png
 │   ├── tender-ai-dashboard.png
 │   ├── tender-ai-tender-analysis.png
 │   ├── tender-ai-evidence-results.png
