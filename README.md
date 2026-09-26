@@ -1,7 +1,8 @@
 # Portfolio
 
-A static developer portfolio showcasing five software projects:
+A static developer portfolio showcasing six software projects:
 
+- **Evidence-First Agent** — MCP server and Python library that make AI agent work auditable, sealing each run into a versioned AI Work Receipt with a SHA-256 hash
 - **ProofPilot** — Evidence-grounded verification with deterministic guardrails, optional semantic verification, provenance tracking, evidence graphs, and audit reports
 - **Tender AI** — AI-powered tender analysis and evidence organization
 - **Doc AI Assistant** — Local PDF question answering with semantic search
@@ -31,6 +32,8 @@ portfolio/
 ├── .nojekyll
 ├── .gitignore
 ├── assets/
+│   ├── evidence-first-agent-architecture.svg
+│   ├── evidence-first-agent-demo.gif
 │   ├── proofpilot-architecture.svg
 │   ├── proofpilot-demo.png
 │   ├── tender-ai-dashboard.png

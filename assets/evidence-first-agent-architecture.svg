@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 900" width="1100" height="900" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5a6b7d"/>
+    </marker>
+    <style>
+      .bg { fill: #0f1419; }
+      .box { rx: 8; stroke-width: 1.5; }
+      .t   { fill: #e1e8ed; font-size: 15px; font-weight: 600; }
+      .s   { fill: #8899a6; font-size: 12px; }
+      .mono{ fill: #e1e8ed; font-size: 12px; font-family: Consolas, 'SF Mono', Menlo, monospace; }
+      .line{ stroke: #5a6b7d; stroke-width: 1.8; fill: none; marker-end: url(#arrow); }
+      .dash{ stroke: #3d4c5c; stroke-width: 1.4; fill: none; stroke-dasharray: 4 4; }
+      .title { fill: #e1e8ed; font-size: 22px; font-weight: 700; }
+      .label { fill: #1da1f2; font-size: 12px; font-weight: 700; letter-spacing: 1px; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1100" height="900"/>
+
+  <text class="title" x="40" y="42">Evidence-First Agent — AI Work Receipts + Verification</text>
+  <text class="s" x="40" y="62">Every claim is checked against recorded evidence; the result is sealed with SHA-256.</text>
+
+  <!-- AI AGENT -->
+  <rect class="box" x="400" y="86" width="300" height="64" fill="#1a2332" stroke="#2a3a4a"/>
+  <text class="label" x="550" y="108" text-anchor="middle">AI AGENT</text>
+  <text class="s" x="550" y="128" text-anchor="middle">Claude Code / Codex / Cursor / your own runtime</text>
+  <path class="line" d="M 550 150 L 550 188"/>
+
+  <!-- MCP SERVER -->
+  <rect class="box" x="330" y="188" width="440" height="112" fill="#132436" stroke="#1da1f2"/>
+  <text class="t" x="550" y="212" text-anchor="middle">MCP server — distribution adapter</text>
+  <text class="mono" x="350" y="234">tools:     work_start · evidence_record · claim_create · verify</text>
+  <text class="mono" x="350" y="252">           approval_request · work_finish · receipt_get</text>
+  <text class="mono" x="350" y="270">resources: receipt:// · evidence:// · audit://      prompt: verify_work</text>
+  <text class="s" x="550" y="290" text-anchor="middle">stdio (default) · streamable-http · no business logic lives here</text>
+  <path class="line" d="M 550 300 L 550 336"/>
+
+  <!-- CORE -->
+  <rect class="box" x="250" y="336" width="600" height="76" fill="#152a20" stroke="#3fb950"/>
+  <text class="t" x="550" y="360" text-anchor="middle">Evidence-First core — WorkLedger</text>
+  <text class="s" x="550" y="380" text-anchor="middle">runs · actions · observations · evidence · claims · verifications · approvals</text>
+  <text class="s" x="550" y="398" text-anchor="middle">source of truth: the MCP layer only forwards calls</text>
+
+  <!-- side: other adapters -->
+  <rect class="box" x="20" y="336" width="200" height="76" fill="#1a2332" stroke="#2a3a4a"/>
+  <text class="t" x="120" y="360" text-anchor="middle">Other adapters</text>
+  <text class="s" x="120" y="380" text-anchor="middle">CLI: evidence-first receipt</text>
+  <text class="s" x="120" y="398" text-anchor="middle">Web UI: Evidence Explorer</text>
+  <path class="line" d="M 220 374 L 248 374"/>
+
+  <!-- side: storage -->
+  <rect class="box" x="880" y="336" width="200" height="76" fill="#1a2332" stroke="#2a3a4a"/>
+  <text class="t" x="980" y="360" text-anchor="middle">Storage</text>
+  <text class="s" x="980" y="380" text-anchor="middle">SQLite evidence store</text>
+  <text class="s" x="980" y="398" text-anchor="middle">evidence graph edges</text>
+  <path class="line" d="M 852 374 L 878 374"/>
+
+  <!-- three record kinds -->
+  <path class="line" d="M 550 412 L 550 436"/>
+  <path class="line" d="M 360 436 L 740 436"/>
+  <path class="line" d="M 360 436 L 360 462"/>
+  <path class="line" d="M 550 436 L 550 462"/>
+  <path class="line" d="M 740 436 L 740 462"/>
+
+  <rect class="box" x="250" y="462" width="220" height="62" fill="#1a2332" stroke="#3182ce"/>
+  <text class="t" x="360" y="488" text-anchor="middle">Actions</text>
+  <text class="s" x="360" y="508" text-anchor="middle">what was attempted, with permission</text>
+
+  <rect class="box" x="440" y="462" width="220" height="62" fill="#1a2332" stroke="#38a169"/>
+  <text class="t" x="550" y="488" text-anchor="middle">Evidence</text>
+  <text class="s" x="550" y="508" text-anchor="middle">observed output, hashed, redacted</text>
+
+  <rect class="box" x="630" y="462" width="220" height="62" fill="#1a2332" stroke="#805ad5"/>
+  <text class="t" x="740" y="488" text-anchor="middle">Claims</text>
+  <text class="s" x="740" y="508" text-anchor="middle">statements that must be checked</text>
+
+  <!-- verification -->
+  <path class="line" d="M 360 524 L 360 556"/>
+  <path class="line" d="M 550 524 L 550 556"/>
+  <path class="line" d="M 740 524 L 740 556"/>
+  <rect class="box" x="250" y="556" width="600" height="86" fill="#2a2410" stroke="#d69e2e"/>
+  <text class="t" x="550" y="580" text-anchor="middle">Verification — deterministic by default</text>
+  <text class="mono" x="270" y="602">keyword_present · keyword_absent · file_exists · sha256_match</text>
+  <text class="mono" x="270" y="620">evidence_count · verification_status_equals   (+ register_check)</text>
+  <text class="s" x="550" y="636" text-anchor="middle">VERIFIED · FAILED · INSUFFICIENT_EVIDENCE · NOT_VERIFIED</text>
+
+  <!-- approval -->
+  <path class="line" d="M 550 642 L 550 674"/>
+  <rect class="box" x="250" y="674" width="600" height="72" fill="#2a1f14" stroke="#ed8936"/>
+  <text class="t" x="550" y="698" text-anchor="middle">Approval gate</text>
+  <text class="s" x="550" y="718" text-anchor="middle">SEND / SUBMIT / DELETE need a human; unclassified actions fail closed</text>
+  <text class="s" x="550" y="736" text-anchor="middle">no adapter can approve — MCP exposes no approve tool</text>
+
+  <!-- receipt -->
+  <path class="line" d="M 550 746 L 550 774"/>
+  <rect class="box" x="250" y="774" width="600" height="58" fill="#231a2e" stroke="#bc8cff"/>
+  <text class="t" x="550" y="798" text-anchor="middle">AI Work Receipt — versioned JSON</text>
+  <text class="s" x="550" y="818" text-anchor="middle">run · actions · evidence · claims · verifications · approvals · result</text>
+
+  <!-- hash -->
+  <path class="line" d="M 550 832 L 550 856"/>
+  <rect class="box" x="250" y="856" width="600" height="36" fill="#101a24" stroke="#57c5cf"/>
+  <text class="mono" x="550" y="879" text-anchor="middle">canonical JSON (sorted keys, UTF-8) → sha256:… — integrity.hash</text>
+</svg>
