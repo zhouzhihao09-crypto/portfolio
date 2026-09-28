@@ -138,7 +138,7 @@
         </div>
         <div class="project-body">
           <h3 class="project-name">Telecom Log Ingestion Service</h3>
-          <p class="project-desc">A backend ingestion pipeline for telecom SMS and mobile-data events, designed around asynchronous buffering, batched PostgreSQL writes, validation, and idempotent processing.</p>
+          <p class="project-desc">Accepts telecom SMS and data-usage events over HTTP, validates them at the boundary, buffers them in memory for async batched flushes, and writes them to PostgreSQL in idempotent bulk inserts chunked to respect the parameter limit.</p>
           <p class="project-metric">52,247 events/sec · 100k events · 0 failed</p>
           <ul class="tech">
             <li>Node.js</li>
