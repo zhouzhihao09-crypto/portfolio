@@ -93,6 +93,7 @@
   <path d="M210 667 C210 690 405 690 405 715" class="arrow"/>
   <path d="M540 667 V715" class="arrow"/>
   <path d="M870 667 C870 690 675 690 675 715" class="arrow"/>
+    <path d="M675 759 H735" class="arrow"/>
   <path d="M870 803 C870 815 540 815 540 825" class="arrow"/>
 
   <g>
