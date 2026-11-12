@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zhou Zhihao — Software / AI Engineering</title>
+  <meta name="description" content="Portfolio of Zhou Zhihao, a software and AI engineer building practical systems: evidence-grounded verification, AI-powered document analysis, local RAG, telecom event ingestion, and a security-focused HTML sanitizer." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta property="og:title" content="Zhou Zhihao — Software / AI Engineering" />
+  <meta property="og:description" content="Practical software systems: evidence-grounded verification, AI-powered document analysis, local RAG, telecom event ingestion, and security-focused sanitization." />
+  <meta property="og:image" content="https://zhouzhihao09-crypto.github.io/portfolio/assets/tender-ai-dashboard.png" />
+  <meta property="og:type" content="website" />
+</head>
+<body>
+  <a class="skip-link" href="#projects">Skip to projects</a>
+  <header class="hero">
+    <div class="container hero-inner">
+      <p class="hero-eyebrow">Zhou Zhihao</p>
+      <h1 class="hero-title">Software &amp; AI Engineering</h1>
+      <p class="hero-subtitle">Building evidence-grounded AI systems, reliable backend services, and practical developer tools.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">View Projects</a>
+        <a class="btn" href="https://github.com/zhouzhihao09-crypto" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="projects" class="projects reveal">
+      <h2 class="section-title">Featured Projects</h2>
+
+      <article class="project-card">
+        <div class="project-media">
+          <img src="assets/evidence-first-agent-architecture.svg" alt="Evidence-First Agent architecture diagram" />
+          <div class="project-gif">
+            <img src="assets/evidence-first-agent-demo.gif" alt="Evidence-First Agent AI work receipt demo" />
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">Evidence-First Agent</h3>
+          <p class="project-desc">Records every agent action as evidence, checks each claim with a deterministic engine, gates consequential actions behind human approval, and seals the run into a versioned, SHA-256-hashed AI Work Receipt.</p>
+          <p class="project-metric">237 tests · CI green · 7 MCP tools · 3 MCP resources</p>
+          <ul class="tech">
+            <li>Python</li>
+            <li>MCP (Model Context Protocol)</li>
+            <li>FastAPI</li>
+            <li>SQLite</li>
+            <li>Deterministic Verification</li>
+            <li>SHA-256 Receipt Integrity</li>
+            <li>Human-in-the-Loop Approvals</li>
+          </ul>
+          <a class="btn btn-primary" href="https://github.com/zhouzhihao09-crypto/evidence-first-agent" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-media">
+          <img src="assets/proofpilot-architecture.svg" alt="ProofPilot architecture diagram" />
+          <div class="project-gif">
+            <img src="assets/proofpilot-demo.png" alt="ProofPilot demo output" />
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">ProofPilot</h3>
+          <p class="project-desc">Ingests documents, extracts claims, and verifies each against retrieved evidence — deterministic checks are the guardrail, with optional semantic verification that can never override a contradiction.</p>
+          <p class="project-metric">117 tests • 1 intentional xfail</p>
+          <ul class="tech">
+            <li>Python</li>
+            <li>FastAPI</li>
+            <li>SQLite</li>
+            <li>pypdf</li>
+            <li>Pydantic</li>
+            <li>BM25 Retrieval</li>
+            <li>Deterministic Verification</li>
+            <li>Hybrid Semantic Verification</li>
+          </ul>
+          <a class="btn btn-primary" href="https://github.com/zhouzhihao09-crypto/proofpilot" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-media">
+          <img src="assets/tender-ai-dashboard.png" alt="Tender AI dashboard" />
+          <div class="project-gif">
+            <img src="assets/tender-ai-demo.gif" alt="Tender AI demo" />
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">Tender AI</h3>
+          <p class="project-desc">A source-aware tender workspace that extracts page-referenced requirements from PDFs, answers grounded questions with cited sources, and assembles a submission package with an evidence vault and bid tracker.</p>
+          <p class="project-metric">177 tests · 0 failures · 71s demo</p>
+          <ul class="tech">
+            <li>FastAPI</li>
+            <li>Python</li>
+            <li>PostgreSQL / SQLite</li>
+            <li>Redis / RQ</li>
+            <li>Ollama / OpenAI</li>
+            <li>pypdf</li>
+            <li>FAISS</li>
+            <li>Stripe</li>
+            <li>Alembic</li>
+          </ul>
+          <a class="btn btn-primary" href="https://github.com/zhouzhihao09-crypto/tender-ai" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-media">
+          <img src="assets/doc-ai-assistant-architecture.svg" alt="Doc AI Assistant architecture diagram" />
+          <div class="project-gif">
+            <img src="assets/doc-ai-assistant-demo.gif" alt="Doc AI Assistant demo" />
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">Doc AI Assistant</h3>
+          <p class="project-desc">A local RAG prototype that chunks a PDF, retrieves the most relevant passages with semantic and keyword scoring, and answers questions through an Ollama model grounded in the retrieved source pages.</p>
+          <p class="project-metric">Local RAG · multilingual embeddings · source pages</p>
+          <ul class="tech">
+            <li>Python</li>
+            <li>FastAPI</li>
+            <li>pypdf</li>
+            <li>sentence-transformers</li>
+            <li>FAISS</li>
+            <li>Ollama</li>
+            <li>Pydantic</li>
+          </ul>
+          <a class="btn btn-primary" href="https://github.com/zhouzhihao09-crypto/doc-ai-assistant" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-media">
+          <img src="assets/telecom-log-ingestion-database-results.png" alt="Telecom Log Ingestion Service database results" />
+          <div class="project-gif">
+            <img src="assets/telecom-log-ingestion-demo.gif" alt="Telecom Log Ingestion Service demo" />
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">Telecom Log Ingestion Service</h3>
+          <p class="project-desc">Accepts telecom SMS and data-usage events over HTTP, validates them at the boundary, buffers them in memory for async batched flushes, and writes them to PostgreSQL in idempotent bulk inserts chunked to respect the parameter limit.</p>
+          <p class="project-metric">52,247 events/sec · 100k events · 0 failed</p>
+          <ul class="tech">
+            <li>Node.js</li>
+            <li>Fastify</li>
+            <li>TypeScript</li>
+            <li>PostgreSQL</li>
+            <li>Docker Compose</li>
+            <li>Pino</li>
+            <li>Vitest</li>
+          </ul>
+          <a class="btn btn-primary" href="https://github.com/zhouzhihao09-crypto/telecom-log-ingestion-service" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-media">
+          <img src="assets/safe-html-sanitizer-demo.png" alt="SafeHTML sanitizer demo screenshot" />
+          <div class="project-gif">
+            <img src="assets/safe-html-sanitizer-demo.gif" alt="SafeHTML sanitizer demo walkthrough" />
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">SafeHTML</h3>
+          <p class="project-desc">A Java 21 library that sanitizes untrusted HTML by parsing it into a DOM with jsoup, walking the tree to apply an allowlist policy, stripping event-handler attributes, validating URLs, and emitting clean HTML alongside a SecurityReport.</p>
+          <p class="project-metric">363 tests · 0 failures · 0 errors · BUILD SUCCESS</p>
+          <ul class="tech">
+            <li>Java 21</li>
+            <li>jsoup</li>
+            <li>JUnit 5</li>
+            <li>Maven</li>
+          </ul>
+          <a class="btn btn-primary" href="https://github.com/zhouzhihao09-crypto/safe-html-sanitizer" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="focus" class="focus reveal">
+      <h2 class="section-title">Engineering Focus</h2>
+      <div class="focus-grid">
+        <div class="focus-block">
+          <h3>AI &amp; RAG</h3>
+          <ul>
+            <li>semantic retrieval</li>
+            <li>embeddings</li>
+            <li>local LLMs</li>
+            <li>document intelligence</li>
+          </ul>
+        </div>
+        <div class="focus-block">
+          <h3>Backend &amp; APIs</h3>
+          <ul>
+            <li>FastAPI</li>
+            <li>Fastify</li>
+            <li>REST APIs</li>
+            <li>asynchronous processing</li>
+          </ul>
+        </div>
+        <div class="focus-block">
+          <h3>Data &amp; Infrastructure</h3>
+          <ul>
+            <li>PostgreSQL</li>
+            <li>SQLite</li>
+            <li>Redis / RQ</li>
+            <li>Docker</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2 class="section-title">About</h2>
+      <p>I build practical software projects that solve concrete problems, with a focus on AI applications, backend systems, data processing, and automation.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="https://github.com/zhouzhihao09-crypto" target="_blank" rel="noopener">GitHub</a>
+      <span>&copy; 2026</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

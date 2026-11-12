@@ -1,0 +1,2 @@
+# Disable Jekyll processing on GitHub Pages so the static
+# HTML, CSS, JS, and assets are served as-is.
